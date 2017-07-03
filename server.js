@@ -23,9 +23,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance.hbs'); // NOTE this is a middleware that stops all routing after it because there is no next message. This could be used for when the site is in maintenance mode.
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs'); // NOTE this is a middleware that stops all routing after it because there is no next message. This could be used for when the site is in maintenance mode.
+// });
 
 app.use(express.static(__dirname + '/public')); // static files
 
